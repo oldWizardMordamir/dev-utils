@@ -10,14 +10,6 @@ The `removeFilesByExtension` utility is a Node.js script that recursively traver
 - Includes a confirmation prompt to prevent accidental deletions.
 - Can skip confirmation for automated workflows.
 
-## Installation
-
-This utility is part of the `dev-utils` library. To use it, install or clone the library:
-
-```bash
-npm install dev-utils
-```
-
 ## Usage
 
 You can run the script using `ts-node` (for TypeScript) or `node` (for compiled JavaScript).
@@ -85,19 +77,7 @@ The script includes error handling for:
 
 Errors are logged to the console for debugging purposes.
 
-## Development
-
-To modify or extend this utility, you can find the source code in the `lib/removeFilesByExtension/index.ts` file. Run the script directly using `ts-node` for testing during development.
-
 ### Running the Script Directly
 ```bash
 ts-node lib/removeFilesByExtension/index.ts '/path/to/directory' '.extension' [options]
 ```
-
-## License
-
-This utility is part of the `dev-utils` library and is licensed under ISC.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests to improve this utility.
