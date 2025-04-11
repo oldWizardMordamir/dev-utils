@@ -1,0 +1,32 @@
+{
+  "name": "dev-utils",
+  "version": "0.0.1",
+  "description": "",
+  "author": "oldWizardMordamir",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "types": "dist/index.t.ts",
+  "keywords": [
+    "utilities",
+    "functions"
+  ],
+  "scripts": {
+    "build": "tsc -d --declarationDir dist --declarationMap",
+    "lint": "eslint . --ext .js,.ts --ignore-path .eslintignore",
+    "format": "npx prettier --write . | grep -v '(unchanged)'",
+    "test": "jest --coverage",
+    "update:dev": "npm update --dev"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
