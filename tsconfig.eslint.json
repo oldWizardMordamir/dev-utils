@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "rootDir": "lib",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "lib": ["ES2015", "ES2018", "es2021"],
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "resolveJsonModule": true
+  },
+  "include": ["lib/**/*.ts", "eslint.config.mjs"],
+  "ignores": ["**/node_modules", "coverage", "dist", "*.ignore*"]
+}
